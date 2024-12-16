@@ -16,6 +16,7 @@ class AkunPembeli(username: String, password: String) : Akun(username, password)
         println("Saldo berhasil ditambahkan! Saldo saat ini: $saldo")
     }
 
+
     fun beliGitar(gitar: Gitar, uangTunai: Double) {
         if (uangTunai >= gitar.harga) {
             saldo -= gitar.harga
